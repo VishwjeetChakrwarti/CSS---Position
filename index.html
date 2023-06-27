@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Position - CSS</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      .container {
+        display: flex;
+        margin: 25px;
+        height: 1500px; /* Added height for scrolling */
+      }
+
+      .box {
+        width: 100px;
+        height: 100px;
+        background-color: #fff6fd;
+        border: 2px solid #ff1414;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 12px;
+      }
+
+      #box2 {
+        border: 2px solid #03be12;
+
+        /* Position static is a deafulat value */
+        /* position: static;  */
+
+        /* Position relative moves an element relative to its normal position. */
+        /* position: relative;
+        top: 40px;
+        left: 40px; */
+
+        /* Position absolute removes an element from normal flow and positions it relative to its nearest positioned ancestor. */
+        /* position: absolute;
+        top: 50px;
+        left: 50px; */
+
+        /* Position fixed positions an element relative to the browser window, regardless of scrolling. */
+        /* position: fixed;
+        bottom: 50px;
+        right: 50px; */
+
+        /* Position sticky is used to make an element stick to a specific position as the user scrolls. */
+        /* position: sticky;
+        top: 10px; */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box" id="box1"></div>
+      <div class="box" id="box2">Before</div>
+      <!-- <div class="box" id="box2">After</div> -->
+      <div class="box" id="box3"></div>
+    </div>
+  </body>
+</html>
